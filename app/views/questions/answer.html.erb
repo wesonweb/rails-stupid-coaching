@@ -1,5 +1,9 @@
 <h1>Answer</h1>
-<form action="./answer" data-turbo="false">
-  <input type="text" name="answer">
-  <input type="submit" value="Ask!">
-</form>
+<p>
+  <span><%= @question %></span>
+</p>
+<p><em>– You</em></p>
+
+<p><%= @answer %></p>
+<p>– Your coach</p>
+<%= link_to"ask a new question", ask_path %>

@@ -1,5 +1,5 @@
 <h1>Question</h1>
 <form action="./answer" data-turbo="false">
-  <input type="text" name="answer">
+  <input type="text" name="question" value="<%= params[:question]%>" placeholder="ask your coach a question" autofocus>
   <input type="submit" value="Ask!">
 </form>
