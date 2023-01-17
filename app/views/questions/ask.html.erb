@@ -1,5 +1,8 @@
-<h1>Question</h1>
-<form action="./answer" data-turbo="false">
-  <input type="text" name="question" value="<%= params[:question]%>" placeholder="ask your coach a question" autofocus>
-  <input type="submit" value="Ask!">
-</form>
+<div class="d-flex flex-column col-6">
+  <h1 class="text-white fs-1">Stupid coaching</h1>
+  <form action="./answer" data-turbo="false">
+  <label for="question" class="form-label text-white mt-3 fs-5">Ask your coach a question</label>
+    <input type="text" class="form-control" name="question" value="<%= params[:question]%>" placeholder="type a question here" autofocus>
+    <input type="submit" value="Ask!" class="btn btn-primary w-100 mt-2">
+  </form>
+</div>

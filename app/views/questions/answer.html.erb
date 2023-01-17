@@ -1,9 +1,12 @@
-<h1>Answer</h1>
-<p>
-  <span><%= @question %></span>
-</p>
-<p><em>– You</em></p>
-
-<p><%= @answer %></p>
-<p>– Your coach</p>
-<%= link_to"ask a new question", ask_path %>
+<div class="col-6">
+  <h1 class="text-white fs-1">Stupid coaching</h1>
+  <div class="mt-4 mb-4 border-start border-light border-4 ps-4">
+    <p class="text-white fs-4"><%= @question %></p>
+    <p class="text-white fs-6 fst-italic"><em>– You</em></p>
+  </div>
+  <div class="mt-4 mb-4 border-start border-success border-4 ps-4">
+    <p class="text-white fs-4"><%= @answer %></p>
+    <p class="text-white fs-6 fst-italic">– Your coach</p>
+  </div>
+  <%= link_to"ask a new question", ask_path, class:"text-white pb-1 link-info border-bottom text-decoration-none" %>
+</div>
